@@ -1,19 +1,3 @@
-import React, { Component } from 'react';
-import './App.css';
-
-//import  getGoogleMaps from './utils.js';
-
-class App extends Component {
-/* render the map to UI*/
-  render() {
-    return (
-      <div id="map">
-      </div>
-    );
-  }
-}
-
-/* Function to retrun the google maps using the GOOGLE Maps API*/
 export function getGoogleMaps() {
   return new Promise((resolve) => {
     window.resolveGoogleMapsPromise = () => {
@@ -27,5 +11,3 @@ export function getGoogleMaps() {
     document.body.appendChild(script);
   });
 }
-
-export default App;
